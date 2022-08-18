@@ -596,6 +596,7 @@ class _QuillEditorSelectionGestureDetectorBuilder
         final _platform = Theme.of(_state.context).platform;
         if (isAppleOS(_platform)) {
           switch (details.kind) {
+            case PointerDeviceKind.trackpad:
             case PointerDeviceKind.mouse:
             case PointerDeviceKind.stylus:
             case PointerDeviceKind.invertedStylus:
